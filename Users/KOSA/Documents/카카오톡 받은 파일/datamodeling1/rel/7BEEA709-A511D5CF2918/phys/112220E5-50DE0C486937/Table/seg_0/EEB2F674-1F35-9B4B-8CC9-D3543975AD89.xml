@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyUDBv81 class="oracle.dbtools.crest.model.design.storage.udb.v81.TableProxyUDBv81" name="EMP" directorySegmentName="seg_0" id="EEB2F674-1F35-9B4B-8CC9-D3543975AD89">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:24 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<summaryQueryChanged>false</summaryQueryChanged>
+<summaryQueryDefinitionChanged>false</summaryQueryDefinitionChanged>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.udb.v81.ColumnProxyUDBv81" name="sal" id="181399C5-C73C-D1A2-0C9E-FFD78B52F787">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:24 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<generate>BY DEFAULT</generate>
+<order>YES</order>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.udb.v81.ColumnProxyUDBv81" name="DEPT_deptno" id="5AE8507F-D672-50B3-FBC7-13A64B7DC89F">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:24 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<generate>BY DEFAULT</generate>
+<order>YES</order>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.udb.v81.ColumnProxyUDBv81" name="empno" id="E95A3582-8B82-1E23-A8BE-9AD896077094">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:24 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<generate>BY DEFAULT</generate>
+<order>YES</order>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.udb.v81.ColumnProxyUDBv81" name="ename" id="F7AFEDB0-1307-8EB3-AA28-E36FFEFC138D">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:24 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<generate>BY DEFAULT</generate>
+<order>YES</order>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.udb.v81.FKProxyUDBv81" name="EMP_DEPT_FK" id="14EB017B-49E1-5B22-3238-20FACC4D45AE">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:24 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyUDBv81>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5312EFC-CD39-9DBA-45F1-C3BC4FEE4CDF" name="DEPT">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:20:44 UTC</createdTime>
+<generatorID>A946077E-8291-2B91-A099-B9055E1517D6</generatorID>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="deptno" id="2CD81188-5754-D394-3763-9CC7562E5D70">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:20:44 UTC</createdTime>
+<generatorID>1716C31E-9DA0-DBF1-73EC-7EE3E3165198</generatorID>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dname" id="11C9DECA-4E3C-539A-06B5-DE9681CAECFB">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:20:44 UTC</createdTime>
+<generatorID>DA2F80BA-28B1-E02D-7B5B-E34E13B8F7EF</generatorID>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loc" id="5F74BE0E-0049-3D76-6D1C-4133D169B9F0">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:20:44 UTC</createdTime>
+<generatorID>49A39CA2-E120-2E0D-79B2-B00EA54F1B8A</generatorID>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="807BF6E0-674D-C28C-EFD3-7B03415D7F4C" name="DEPT_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:20:44 UTC</createdTime>
+<generatorID>7901967D-518E-2E4D-CE16-E9D76A7A38EF</generatorID>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CD81188-5754-D394-3763-9CC7562E5D70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

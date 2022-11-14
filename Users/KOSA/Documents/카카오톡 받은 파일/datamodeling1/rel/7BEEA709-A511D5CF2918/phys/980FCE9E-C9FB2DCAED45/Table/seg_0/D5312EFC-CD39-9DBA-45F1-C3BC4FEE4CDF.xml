@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="DEPT" directorySegmentName="seg_0" id="D5312EFC-CD39-9DBA-45F1-C3BC4FEE4CDF">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:10 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dname" id="11C9DECA-4E3C-539A-06B5-DE9681CAECFB">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:10 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="deptno" id="2CD81188-5754-D394-3763-9CC7562E5D70">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:10 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="loc" id="5F74BE0E-0049-3D76-6D1C-4133D169B9F0">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:10 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="DEPT_PK" id="807BF6E0-674D-C28C-EFD3-7B03415D7F4C">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:10 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

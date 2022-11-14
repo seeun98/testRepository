@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignUDBv9 class="oracle.dbtools.crest.model.design.storage.udb.v97.StorageDesignUDBv9" name="DB2/UDB 9" id="C231AE27-A81D-8FB1-D34C-E6A912EA175E" siteID="112220E5-3DBD-675C-4CE0-50DE0C486937" siteName="DB2/UDB 9" siteType="10">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:24 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<dtdialogVisible>false</dtdialogVisible>
+</StorageDesignUDBv9>

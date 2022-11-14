@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEPT" directorySegmentName="seg_0" id="D5312EFC-CD39-9DBA-45F1-C3BC4FEE4CDF">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:18 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="dname" id="11C9DECA-4E3C-539A-06B5-DE9681CAECFB">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:18 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="deptno" id="2CD81188-5754-D394-3763-9CC7562E5D70">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:18 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="loc" id="5F74BE0E-0049-3D76-6D1C-4133D169B9F0">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:18 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPT_PK" id="807BF6E0-674D-C28C-EFD3-7B03415D7F4C">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-14 01:22:18 UTC</createdTime>
+<ownerDesignName>datamodeling1</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>
