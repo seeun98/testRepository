@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="테이블" id="825399FF-EB07-EC1B-A41C-F734E5A7DC4A" version="3.5">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 07:00:54 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>825399FF-EB07-EC1B-A41C-F734E5A7DC4A</designId>
+</OSDM_Design>

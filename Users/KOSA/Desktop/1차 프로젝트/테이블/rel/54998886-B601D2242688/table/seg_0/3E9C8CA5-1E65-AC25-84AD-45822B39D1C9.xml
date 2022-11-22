@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E9C8CA5-1E65-AC25-84AD-45822B39D1C9" name="orderList">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:48:36 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderListId" id="D111463A-4DF5-0B29-01E8-A00776D0002F">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:49:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[sequence increment 사용]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productId" id="EAE8609B-B3AD-00E6-6BC5-BCF00717E5BA">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:49:34 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="4345D054-9953-BB67-8638-3751FE212BD6">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:49:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[각 상품 수량]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEFFF9B6-A5C5-4E19-8421-A6276244D1CE" name="orderList_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:49:10 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D111463A-4DF5-0B29-01E8-A00776D0002F"/>
+<colUsage columnID="EAE8609B-B3AD-00E6-6BC5-BCF00717E5BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

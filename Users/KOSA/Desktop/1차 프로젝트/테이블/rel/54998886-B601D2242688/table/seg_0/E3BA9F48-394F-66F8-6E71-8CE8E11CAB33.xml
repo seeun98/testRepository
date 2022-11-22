@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3BA9F48-394F-66F8-6E71-8CE8E11CAB33" name="review">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:07:58 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+</Table>
