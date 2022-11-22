@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Noto_Sans_KR';
+  font-style: 'normal';
+  src: url('fonts/Noto_Sans_KR/NotoSansKR-Light.otf');
+}
+
+body {
+  font-family:'Noto_Sans_KR';
+  position: relative;
+  /* font-family: "NotoSansKR", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움"; */
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #767572;
+  letter-spacing: -0.025em;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+html{
+  -webkit-text-size-adjust: 100%;
+}
+
+div {
+  display: block;
+}
+
+button {
+  font-family: "NotoSansKR", sans-serif, Malgungothic, "맑은고딕", Dotum, "돋움";
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  letter-spacing: -0.025em;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  background-color: #101010;
+  z-index: 10;
+  position: relative;
+  padding: 44px 0 120px;
+  min-height: calc(100% - 424px);
+  z-index: 10;
+}
+
+#footer .util {margin-top: 100px;margin-bottom: -40px;border-top: 2px solid #767572; display:block;}
+#footer .util > div {position: relative;float: left;}
+#footer .util .familysite .btn-site {
+  position: relative;
+  padding-right: 75px;
+  width: 160px;
+  height: 59px;
+  line-height: 59px;
+  color: #fff;
+  font-size: 16px;
+  text-align: right;
+  font-weight: 200;
+  font-family: "Roboto";
+}
+#footer .inner {
+  position: relative;
+  margin: 0 auto;
+  width: 1204px;
+  padding: 34px 0 40px 186px;
+}
+
+#footer .util .inner > a {
+  display: inline-block;
+  margin-right: 24px;
+  line-height: 59px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#footer .util .share {
+  position: absolute;
+  top: 15px;
+  right: 193px;
+  font-size: 0;
+}
+
+#footer .info {
+  line-height: 24px;
+  color: #aea7a2;
+  font-size: 14px;
+}
+
+#footer .info .inner {
+  padding: 34px 0 40px 186px;
+}
+
+#fnDawnBizpCrstList {
+  display : block;
+}
