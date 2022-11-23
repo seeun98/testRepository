@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC9873F3-68FA-D81B-4919-0152FBCEC435" name="order">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:40:39 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orderId" id="A2061E5E-476A-8910-8227-5947796811A3">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:41:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[sequence로 increment 할 것]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="customerId" id="1E71CB48-CF81-6E69-D339-3697996C4E3C">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:42:03 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productId" id="3CB0D46D-8EAE-2690-0C50-71AF49E65111">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:43:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품 아이디 ]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orderDate" id="A87143C8-08EB-90C0-A675-3F9066809030">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:43:45 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="recipient" id="EFF08341-D2E9-833D-8784-0F2AEE014DE0">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:44:22 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reciAddress" id="9185EFF3-2712-A0AD-EA9C-65B6FFDC8CB1">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:44:46 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reciPhone" id="EC184A3D-0A88-DF62-18A1-1EFEEECF515C">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:45:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[수령인 전화번호]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="totalPrice" id="98F41453-E2EE-1929-ACCD-310A5A75930A">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:45:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[총 금액
+]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FBC89184-2974-51EE-E4F2-525FA30E7FE3" name="order_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:41:34 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2061E5E-476A-8910-8227-5947796811A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

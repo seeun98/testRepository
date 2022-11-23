@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C724AFF-721E-044E-5977-1E138EC65161" name="productDescription">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 10:59:30 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="productId" id="873A02A4-C50D-F67B-D936-98F11D41EECC">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:00:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품아이디]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productExpireDate" id="E1A8E7DB-955E-3E22-1837-C7A3B02C7E77">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:03:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[안심사용기한]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="size" id="B550CCCE-4341-5BC7-483B-1E74C52AF412">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:03:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[크기]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productFrom" id="926FB515-E5BD-7482-1705-2C8D9B1E6F12">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:04:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[생산지, 수입지]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productName" id="ACB931F2-C51E-9068-EB96-F410FD1F84EF">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:04:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[품목 또는 명칭]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="storage" id="A5453967-1F63-35C3-2B07-BE8883242042">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:04:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[보관 방법]]></commentInRDBMS>
+<ownerDesignName>테이블</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54681E6B-E91F-71A0-5D54-80AF19DC700A" name="productDescription_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:00:18 UTC</createdTime>
+<ownerDesignName>테이블</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="873A02A4-C50D-F67B-D936-98F11D41EECC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

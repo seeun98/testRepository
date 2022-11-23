@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="129268A8-B516-F7EC-C0B6-084A99D8D70E" name="category">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>97FD0FC9-58D9-F87A-82FC-2F90F0856B05</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="categoryId" id="A6812ED6-694C-820A-8680-5449AC126E2D">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[카테고리id]]></commentInRDBMS>
+<generatorID>2508BC10-8FBD-2EA1-EFB6-B551ADAAE890</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="innerCategory" id="81D444ED-7EF2-5577-C307-40DEB4A12212">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[작은카테고리명]]></commentInRDBMS>
+<generatorID>4E04C155-674F-4E82-2937-F2775922FB30</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BEC6BA58-9C3B-B089-7893-E50011833804" name="category PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>7FA80CF3-BCEF-2E4C-20AE-57D2439D1DEC</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A6812ED6-694C-820A-8680-5449AC126E2D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

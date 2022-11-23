@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="625AE468-206E-66CE-3EA2-BBDDE1059446" name="orderList">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>CC9873F3-68FA-D81B-4919-0152FBCEC435</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="orderListId" id="AEE20079-FFCB-2BD6-8841-EC43417DABF6">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[sequence로 increment 할 것]]></commentInRDBMS>
+<generatorID>A2061E5E-476A-8910-8227-5947796811A3</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customerId" id="545C0E15-0366-0CB8-4142-E1B847CEFE13">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>1E71CB48-CF81-6E69-D339-3697996C4E3C</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="productId" id="74272346-0154-88AF-23EF-7EFEF06033FE">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품 아이디 ]]></commentInRDBMS>
+<generatorID>3CB0D46D-8EAE-2690-0C50-71AF49E65111</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="orderDate" id="F4D7A932-8A7A-9083-412C-2DEE93ACDD35">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>A87143C8-08EB-90C0-A675-3F9066809030</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="recipient" id="A4F07BF0-DD51-BB41-7DFE-98FC896CF754">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>EFF08341-D2E9-833D-8784-0F2AEE014DE0</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reciAddress" id="6B6AD8EF-65CF-62D3-7959-317D25A45377">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>9185EFF3-2712-A0AD-EA9C-65B6FFDC8CB1</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reciPhone" id="F35DDD42-5969-3922-64CF-1CDC67BF2668">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[수령인 전화번호]]></commentInRDBMS>
+<generatorID>EC184A3D-0A88-DF62-18A1-1EFEEECF515C</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="totalPrice" id="FBAE5FD7-5B71-3BB7-2165-B3E4E55832C9">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[총 금액
+]]></commentInRDBMS>
+<generatorID>98F41453-E2EE-1929-ACCD-310A5A75930A</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customerId1" id="B6C18FD8-DFA4-B8CA-C135-17CBFD8491A3">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 12:02:49 UTC</createdTime>
+<generatorID>B0C9CC8C-5C7F-9835-421C-8C9D6D2D0A94</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<referedAttribute>6772A3D2-5062-26FB-49E3-7E19121C137D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0843F1AA-42E5-A16D-7EA4-8CB223EF4B01" name="order PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-22 11:36:17 UTC</createdTime>
+<generatorID>FBC89184-2974-51EE-E4F2-525FA30E7FE3</generatorID>
+<ownerDesignName>테이블</ownerDesignName>
+<engineerTo>
+<item key="54998886-008D-F681-3D4E-B601D2242688" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AEE20079-FFCB-2BD6-8841-EC43417DABF6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -88,13 +88,13 @@
 <point x="947" y="227"/>
 </points>
 </Connector>
-<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="8D8048E1-8086-56AC-B0F5-B16D0AE4D870" otype="Relation" vid_source="F7B265DB-742C-387F-4330-50C70FF4F092" vid_target="A3BF0E55-B497-6035-8C9A-B8060918DF14">
+<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="807B9511-EEE1-942B-E1D7-8C0D5489F803" otype="Relation" vid_source="F7B265DB-742C-387F-4330-50C70FF4F092" vid_target="A3BF0E55-B497-6035-8C9A-B8060918DF14">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="512" y="255"/>
-<point x="512" y="160"/>
+<point x="497" y="255"/>
+<point x="497" y="160"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="8E82CE4F-C4AB-3F7E-ACBE-B0FB5897FEC8" otype="Relation" vid_source="2797BC4B-AC63-E92E-92E1-C4DA8472D1C1" vid_target="5D32BA6C-6DDD-5C0F-1648-F942C66006A6">
@@ -131,15 +131,6 @@
 <points>
 <point x="166" y="163"/>
 <point x="166" y="263"/>
-</points>
-</Connector>
-<Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="D3C73F49-4F35-5D52-C39C-80238F4473EC" otype="Relation" vid_source="2797BC4B-AC63-E92E-92E1-C4DA8472D1C1" vid_target="9C39AF1E-5F96-D24F-346D-4D16DC47465F">
-<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<backgroundColor>-16777216</backgroundColor>
-<lineWidth>1</lineWidth>
-<points>
-<point x="735" y="227"/>
-<point x="537" y="470"/>
 </points>
 </Connector>
 </connectors>

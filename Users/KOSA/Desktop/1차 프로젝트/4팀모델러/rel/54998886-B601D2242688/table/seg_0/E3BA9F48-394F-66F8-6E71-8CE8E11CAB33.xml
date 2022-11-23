@@ -12,7 +12,7 @@
 <createdBy>KOSA</createdBy>
 <createdTime>2022-11-22 12:14:02 UTC</createdTime>
 <commentInRDBMS><![CDATA[review ID]]></commentInRDBMS>
-<ownerDesignName>테이블</ownerDesignName>
+<ownerDesignName>4팀모델러</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -23,7 +23,7 @@
 <Column name="customerId" id="8AD472B1-CD1F-0313-AB27-F254E6F5159D">
 <createdBy>KOSA</createdBy>
 <createdTime>2022-11-22 12:14:45 UTC</createdTime>
-<ownerDesignName>테이블</ownerDesignName>
+<ownerDesignName>4팀모델러</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -34,7 +34,7 @@
 <Column name="productId" id="9DB9EF17-EC17-A8B4-749D-EAA160A296BA">
 <createdBy>KOSA</createdBy>
 <createdTime>2022-11-22 12:15:13 UTC</createdTime>
-<ownerDesignName>테이블</ownerDesignName>
+<ownerDesignName>4팀모델러</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -44,7 +44,7 @@
 <Column name="orderId" id="E39251F4-963C-D782-ECC5-0363C7415B89">
 <createdBy>KOSA</createdBy>
 <createdTime>2022-11-22 12:19:16 UTC</createdTime>
-<ownerDesignName>테이블</ownerDesignName>
+<ownerDesignName>4팀모델러</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -56,7 +56,7 @@
 <createdBy>KOSA</createdBy>
 <createdTime>2022-11-22 12:17:27 UTC</createdTime>
 <commentInRDBMS><![CDATA[별점]]></commentInRDBMS>
-<ownerDesignName>테이블</ownerDesignName>
+<ownerDesignName>4팀모델러</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -67,7 +67,7 @@
 <createdBy>KOSA</createdBy>
 <createdTime>2022-11-22 12:17:44 UTC</createdTime>
 <commentInRDBMS><![CDATA[리뷰날짜]]></commentInRDBMS>
-<ownerDesignName>테이블</ownerDesignName>
+<ownerDesignName>4팀모델러</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -79,7 +79,7 @@
 <createdBy>KOSA</createdBy>
 <createdTime>2022-11-22 12:18:23 UTC</createdTime>
 <commentInRDBMS><![CDATA[리뷰 내용]]></commentInRDBMS>
-<ownerDesignName>테이블</ownerDesignName>
+<ownerDesignName>4팀모델러</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
