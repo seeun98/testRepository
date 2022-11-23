@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C26C7EE-BE76-36CF-49D4-C48AD5F7090E" name="cart">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>82D2EFA4-AF1F-B1BB-3BF4-A533316FF97A</importedID>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customerId" id="8A0CE8A7-3C3C-C4AB-B09D-2C1DA799B71F">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품 id]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>9D7A7755-B0E2-99EB-6BFD-79867AE3CC41</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productId" id="AECA3E01-42D0-206C-427D-6242ADEB7E60">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[customerId + productId]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>37229187-85DF-C2F3-217B-021091993B4E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantity" id="0B732F30-AF0C-2792-EA4D-4730C0C208E3">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[각 상품의 수량]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>D8D07249-8373-5CE4-6B1E-D65A21F13FC5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13465889-3BAC-18CE-BD50-B1FE8945D548" name="cart_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>7D37E3AF-3AE4-DF3E-F6B8-8D98E2EB6B7A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A0CE8A7-3C3C-C4AB-B09D-2C1DA799B71F"/>
+<colUsage columnID="AECA3E01-42D0-206C-427D-6242ADEB7E60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

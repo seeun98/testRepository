@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="FAE50830-B5CC-750D-FD26-D41BD5381309" mainViewID="2A37F742-CA24-76AC-FAF3-62B96C8675E1">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:50:25 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

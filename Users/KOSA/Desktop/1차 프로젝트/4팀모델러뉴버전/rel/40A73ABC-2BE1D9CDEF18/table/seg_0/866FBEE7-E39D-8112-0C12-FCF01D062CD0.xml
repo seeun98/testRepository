@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="866FBEE7-E39D-8112-0C12-FCF01D062CD0" name="product">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>1767B7BE-8B7C-8DD8-A7B5-A1370B6F5100</importedID>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="productId" id="812E5575-64CA-1D49-BB0C-600A09D8DE5E">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>995266A8-874F-3004-2741-B65285E07F1A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productName" id="165A8853-12B1-95F3-56CA-31C88CBAB520">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품명]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>168457E3-D3C9-0F3E-3B06-EC54AEDB37A2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="9CF61402-643F-87A5-225C-BAB3B430EDC0">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품 가격]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>B1DB0470-0FFD-893D-7D0A-E48F620EAEB7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="takeType" id="0455A092-59B5-0485-E764-4CA2F2C47AE1">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[포장타입]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>C4AB1CCA-9AEB-AA4B-9F09-72670CA49E80</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoryId" id="90E8CA5A-65E0-7949-8C63-28D8D0B9D30B">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>F5E5C379-3EB0-60D8-DDC6-3BD4BC1DDAA5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productDescription" id="BB04341F-2CCF-076C-FBF9-D39756892A38">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>A4AAB9A2-D8B7-EF9F-2963-A139977062F2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salePercent" id="C4312AD7-A7BD-84A7-539D-8C0B0C59BD10">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[세일률]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>00494276-762E-7096-34B6-CBEB00DF7239</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productInsertDate" id="D09DA568-723B-5B06-59E2-9C500988E6AF">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품 등록 날짜]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>A26E4246-7CEB-06D3-C9A7-441CAA55F67D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="productExpireDate" id="C9D61E52-52FF-614A-3049-76DCF64FDBE3">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[상품 마감날짜, 유통기한]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>8B0124A7-5819-57B2-D170-84B9CCE827DB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="remain" id="02313CDC-EC60-463A-41CD-0C29C6CCF79A">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[재고수량]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>15FC86B9-29A3-B199-5E84-6981E036B1E8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E410FE0-C10C-DFA1-4ADC-1DDE0A05A82B" name="product_PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>B95552F1-6A71-2AD5-726C-E96427D9AAFC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="812E5575-64CA-1D49-BB0C-600A09D8DE5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

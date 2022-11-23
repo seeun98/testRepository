@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47BB280C-00E1-E8FD-0BFE-50E8A6226709" name="review">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>BBA6C73B-19D0-0F87-ACCB-C061F3A46999</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="productId" id="815B1023-D8AA-409D-4E02-C733E228AA79">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<generatorID>CF134253-8CF7-084C-B037-2E491A211589</generatorID>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>6125FDD8-9712-E946-7727-E781A7F8E5A8</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<referedAttribute>ED2649F7-64D1-5124-F008-C19A14E885F5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customerId" id="4B4DCA1D-61A0-5D44-FD5D-7158AA3ECC7B">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>A4AF3F16-ADD4-DE34-60DB-8AB56C1F4E73</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<referedAttribute>27ECFB84-0605-B022-9150-1EE528279C37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customerId1" id="80B054F2-468C-243C-8A29-C781DAFCB218">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<generatorID>61AAEA53-C190-5D47-CAC4-DAD7874E51F4</generatorID>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>B8D3568A-8527-678F-BEE8-1E88C3D2798C</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<referedAttribute>27ECFB84-0605-B022-9150-1EE528279C37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECDDF511-AF8A-C997-EC47-C28F148A4CCA" name="review PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>10A59BE0-76B9-73E9-C5D1-EB1BA5E0394B</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4B4DCA1D-61A0-5D44-FD5D-7158AA3ECC7B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

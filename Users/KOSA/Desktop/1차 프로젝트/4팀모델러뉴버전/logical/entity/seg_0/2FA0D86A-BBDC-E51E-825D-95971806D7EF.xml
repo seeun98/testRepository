@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2FA0D86A-BBDC-E51E-825D-95971806D7EF" name="order">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>84F73805-12E3-A1C4-3E1A-204AD08C27B6</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="productId" id="3494EF86-8252-B1AA-390B-F87543E5B292">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>FD7BCDE0-D1F8-97D1-86F8-2C93C11DABDA</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantity" id="ED8847C4-9A77-D592-27CE-29B502804F91">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[각 상품 수량]]></commentInRDBMS>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>A1A1CD72-FD28-ED8F-71CF-4E18DB5F2DBC</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="customerId1" id="2A1F344F-B187-610B-A68A-88014508C1A7">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<generatorID>12F23E14-BF82-D012-0B8A-0671A0D93BCE</generatorID>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>C8E4023F-B4F1-FCA9-8887-C68172F201D5</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<referedAttribute>27ECFB84-0605-B022-9150-1EE528279C37</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="orderListId" id="DBF964A2-BA0D-0E77-C58A-75001A0EFAA6">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<generatorID>EF27C29C-2921-D3C8-95A3-72D94D7D141E</generatorID>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>78816986-8B99-8858-4B66-02D301D1858F</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<referedAttribute>D58E868D-92AC-A5CF-E45D-09F00EA2D5EB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="99E53E93-6D39-80CA-B5B3-0378E9EBDC35" name="orderList PK">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:51:09 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<importedID>A1BAE3A1-DF2F-8B5F-1D00-FF2BDD2EAA47</importedID>
+<engineerTo>
+<item key="40A73ABC-98CC-5A27-6AA6-2BE1D9CDEF18" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3494EF86-8252-B1AA-390B-F87543E5B292</attributeRef>
+<attributeRef>2A1F344F-B187-610B-A68A-88014508C1A7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

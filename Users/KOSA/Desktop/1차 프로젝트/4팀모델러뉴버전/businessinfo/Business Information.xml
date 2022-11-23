@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="43A8837A-E1A0-A0B6-9FF4-9F20F19B6A8B">
+<createdBy>KOSA</createdBy>
+<createdTime>2022-11-23 01:50:25 UTC</createdTime>
+<ownerDesignName>4팀모델러뉴버전</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>
