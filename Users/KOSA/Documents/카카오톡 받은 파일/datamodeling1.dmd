@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="datamodeling1" id="989E6E25-9E13-45A6-2474-3FB7F729EA52" version="3.5">
-<createdBy>KOSA</createdBy>
-<createdTime>2022-11-14 01:06:00 UTC</createdTime>
-<ownerDesignName>datamodeling1</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>989E6E25-9E13-45A6-2474-3FB7F729EA52</designId>
-</OSDM_Design>
