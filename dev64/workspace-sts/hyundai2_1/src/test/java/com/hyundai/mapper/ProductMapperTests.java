@@ -60,4 +60,16 @@ public class ProductMapperTests {
 		int count = mapper.getCategoryTotalCount("스킨케어");
 		log.info(count);
 	}
+	
+	
+	//product newBest 조회
+	@Test
+	public void testNewBestListWithPaging() {
+		log.info("getNewBestWith Paging");
+		
+		List<productVO> list = mapper.getNewBestListWithPaging(new Criteria());
+		for(int i = 0; i < list.size(); i++) {
+			log.info(list.get(i));
+		}
+	}
 }

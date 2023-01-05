@@ -13,4 +13,7 @@ public interface ProductService {
 	//카테고리 product조회
 	public List<productVO> getCategoryListWithPaging(Criteria cri, String productCategory);
 	public int getCategoryTotalCount(String productCategory);
+	
+	//newBest
+	
 }

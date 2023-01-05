@@ -16,4 +16,8 @@ public interface ProductMapper {
 	public List<productVO> getCategoryListWithPaging(@Param("cri") Criteria cri, @Param("productCategory") String productCategory);
 	
 	public int getCategoryTotalCount(@Param("productCategory") String productCategory);
+	
+	public List<productVO> getNewBestListWithPaging(Criteria cri);
+	
+	public int getNewBestTotalCount();
 }
