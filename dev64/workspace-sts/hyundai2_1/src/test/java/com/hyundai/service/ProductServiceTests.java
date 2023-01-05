@@ -36,4 +36,19 @@ public class ProductServiceTests {
 		int count = service.getTotalCount();
 		System.out.print(count);
 	}
+	
+	@Test
+	public void testGetCategoryList() {
+
+		List<productVO> list = service.getCategoryListWithPaging(new Criteria(1,9), "스킨케어");
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+	}
+	
+	@Test
+	public void testCategoryCount() {
+		System.out.println(service.getCategoryTotalCount("스킨케어"));
+		
+	}
 }

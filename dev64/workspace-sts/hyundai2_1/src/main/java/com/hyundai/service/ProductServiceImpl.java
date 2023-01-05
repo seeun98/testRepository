@@ -31,5 +31,16 @@ public class ProductServiceImpl implements ProductService {
 		return mapper.getTotalCount();
 	}
 
+	@Override
+	public List<productVO> getCategoryListWithPaging(Criteria cri, String productCategory) {
+		log.info(">>> 카테고리 상품 페이징");
+		return mapper.getCategoryListWithPaging(cri, productCategory);
+	}
+
+	@Override
+	public int getCategoryTotalCount(String productCategory) {
+		return mapper.getCategoryTotalCount(productCategory);
+	}
+
 	
 }

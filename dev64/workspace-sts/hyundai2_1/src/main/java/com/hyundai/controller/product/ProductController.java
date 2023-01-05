@@ -37,5 +37,18 @@ public class ProductController {
 		return "product/productList";
 	}
 	
-	
+	//product Category
+	@GetMapping("/productCategory")
+	public String list(Criteria cri, @RequestParam("productCategory") String productCategory, @RequestParam("pageNum") Integer pageNum, @RequestParam("amount") Integer amount, Model model) throws Exception {
+		
+		cri.setPageNum(pageNum);
+		cri.setAmount(amount);
+		int total = productService.getCategoryTotalCount(productCategory);
+		System.out.println(total);
+		model.addAttribute("productList", productService.getCategoryListWithPaging(cri, productCategory));
+		PageDTO pageDTO = new PageDTO(cri, total);
+		model.addAttribute("pageMaker", pageDTO);
+		
+		return "product/productList";
+	}
 }

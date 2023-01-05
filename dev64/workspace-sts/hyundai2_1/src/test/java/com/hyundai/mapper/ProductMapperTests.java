@@ -23,6 +23,8 @@ public class ProductMapperTests {
 	@Setter(onMethod_ = @Autowired)
 	private ProductMapper mapper;
 	
+	
+	//product 전체 조회
 	@Test 
 	public void testGetListWithPaging() {
 		log.info("getListWith paging");
@@ -33,10 +35,29 @@ public class ProductMapperTests {
 		}
 	}
 	
+	//product 전체 개수
 	@Test
 	public void testGetTotalCount() {
 		log.info("getTotalCount");
 		int count = mapper.getTotalCount();
 		System.out.println(count);
+	}
+	
+	//product Category 조회
+	@Test
+	public void testCategoryListWithPaging() {
+		log.info("getCategoryListWith paging");
+		List<productVO> list = mapper.getCategoryListWithPaging(new Criteria(), "스킨케어");
+		for(int i = 0; i < list.size(); i++) {
+			log.info(list.get(i));
+		}
+	}
+	
+	//product Category 전체 개수
+	@Test
+	public void testCategoryTotalCount() {
+		log.info("getCategoryListWith paging");
+		int count = mapper.getCategoryTotalCount("스킨케어");
+		log.info(count);
 	}
 }
