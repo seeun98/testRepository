@@ -21,7 +21,7 @@ public class ProductServiceImpl implements ProductService {
 	//상품 전체 list 불러오기
 	@Override
 	public List<productVO> getListWithPaging(Criteria cri) throws Exception {
-		log.info(">>> 상품 페이징 처리 list 불러오기" +cri);
+		log.info(">>> 상품 페이징 처리 list 불러오기" + cri);
 		return mapper.getListWithPaging(cri);
 	}
 
@@ -40,6 +40,16 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public int getCategoryTotalCount(String productCategory) {
 		return mapper.getCategoryTotalCount(productCategory);
+	}
+
+	@Override
+	public List<productVO> getNewBestListWithPaging(Criteria cri) {
+		return mapper.getNewBestListWithPaging(cri);
+	}
+
+	@Override
+	public int getNewBestTotalCount() {
+		return mapper.getNewBestTotalCount();
 	}
 
 	

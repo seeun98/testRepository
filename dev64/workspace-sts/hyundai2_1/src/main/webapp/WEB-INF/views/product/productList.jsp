@@ -295,9 +295,11 @@ var google_alanytics_id = 'UA-166260789-1';
 									<li><div class="box ">
 											<div class="img">
 												<div class="prdimg img1226">
-													<a href='/product/productDetail?productId=<c:out value="${productList.productId}"/>'>
-													<img src="<c:out value='${productList.imagePath}'/>"
-														width="380" height="466"></a>
+													<a
+														href='/product/productDetail?productId=<c:out value="${productList.productId}"/>'>
+														<img src="<c:out value='${productList.imagePath}'/>"
+														width="380" height="466">
+													</a>
 												</div>
 												<!-- 상품품절 영역 -->
 												<div class="soldout"
@@ -371,144 +373,58 @@ var google_alanytics_id = 'UA-166260789-1';
 								</c:forEach>
 							</ul>
 							<!-- 상품 jsplist -->
-							
+
 							<!-- Pagination -->
-							
-							
-							<div class="paging">
+
+
+							<div class="">
 								<!--  이전 버튼이 true이면 -->
 								<c:if test="${pageMaker.prev}">
-									<span class="paginate_button previous">
-										<a href="${pageMaker.startPage -1}">이전</a>
+									<span class="paginate_button previous"> <a
+										href="${pageMaker.firstPage}"> << </a> <a
+										href="${pageMaker.startPage -1}">이전</a>
 									</span>
 								</c:if>
-								
-								
+
+
 								<!-- number -->
-								<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage }">
+								<c:forEach var="num" begin="${pageMaker.startPage}"
+									end="${pageMaker.endPage }">
+
+
 									<span class="paginate_button ${pageMaker.cri.pageNum == num ? "active" : ""} ">
-										<a href="/product/productList?pageNum=${num}&amount=9">${num}</a>
+
+										<a style="font-weight: bold; margin: 3px;" class="pageBtn"
+										href="/product/productList?pageNum=${num}&amount=9">${num}</a>
+
+
 									</span>
 								</c:forEach>
-								
+
 								<!-- 이전 버튼 -->
 								<c:if test="${pageMaker.next}">
-									<span class="paginate_button next">
-										<a href="${pageMaker.endPage + 1}"></a>
+									<span class="paginate_button next"> <a
+										href="${pageMaker.endPage + 1}"></a>
 									</span>
 								</c:if>
+
 							</div>
-							
+
 							<!-- 311p -->
-							<form id='actionFrom' action = "/product/productList" method="get">
-								<input type='hidden' name='pageNum' value='${pageNum.cri.pageNum}'>
-								<input type='hidden' name='amount' value='${pageNum.cri.amount }'>
-								
+							<form id='actionFrom' action="/product/productList" method="get">
+								<input type='hidden' name='pageNum'
+									value='${pageNum.cri.pageNum}'> <input type='hidden'
+									name='amount' value='${pageNum.cri.amount }'>
+
 							</form>
-							
-							<%-- <div class='pull-right'>
-								<ul class="pagination">
-									<c:if test="${pageMaker.prev}">
-										<li class="paginate_button previous">
-											<a href="${pageMaker.startPage - 1}">Previous</a>
-										</li>
-									</c:if>
-									
-									<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
-										<li class="paginate_button" ${pageMaker.cri.pageNum == num ? "active": ""} ">
-											<a href="${num}">${num}</a>
-										</li>
-									</c:forEach>
-									
-									<c:if test="${pageMaker.next}">
-										<li class="paginate_button next">
-											<a href="${pageMaker.endPage + 1}">Next</a>
-										</li>
-									</c:if>
-								</ul>
-							</div> --%>
-							
-							<!--  end Pagination -->
 
-<!-- 페이징 처리 코드 book -->
-						<%-- <div class="paging">
-							<c:if test="${pageMaker.prev}">
-								<!-- 이전 버튼 -->
-								<span class="paginate_button previous"> <a
-									href="${pageMaker.firstPage}"> << </a> <a
-									href="${pageMaker.startPage - 1}"> < </a>
-								</span>
-							</c:if>
-							<!-- 페이징 처리 시작부분 -->
-							<!-- 1~10 버튼 -->
-							<!-- jstl을 사용하여 현재 페이지의 번호를 굵게 한다 -->
-							<c:forEach var="num" begin="${pageMaker.startPage}"
-								end="${pageMaker.endPage}">
-								<span class="paginate_button"> <c:choose>
-										<c:when test="${pageMaker.cri.pageNum eq num}">
-											<a style="font-weight: bold; margin: 3px;" class="pageBtn"
-												href="${num}">${num}</a>
-										</c:when>
-										<c:otherwise>
-											<a style="margin: 3px;" class="pageBtn" href="${num}">${num}</a>
-										</c:otherwise>
-									</c:choose>
-								</span>
-							</c:forEach>
-							<c:if test="${pageMaker.next}">
-								<!-- 이전 버튼 -->
-								<span class="paginate_button next"> <a
-									href="${pageMaker.endPage + 1}">></a> <a
-									href="${pageMaker.lastPage}"> >> </a>
-								</span>
-							</c:if>
-							<!-- 페이징 처리 끝 -->
-							
-							<!-- 페이징에서 다시 다른 버튼 누르면 category 리스트 아닌 productList의 리스트로 다시 넘어감 ! -->
-							
-							<form id='actionForm' action="/product/productList" method='get'>
-								<input type='hidden' id='pageNum' name='pageNum'
-									value='${pageMaker.cri.pageNum}'> <input type='hidden'
-									name='amount' value='${pageMaker.cri.amount}'>
-							</form> --%>
+							<!-- End Pagination -->
+						</div>
 
 
-<%-- 
-							<!-- 페이징 -->
-							<ul class="paging">
-								<c:if test="${pageMaker.prev}">
-									<li>
-										<a href="${pageMaker.startPage -1}">Previous</a>
-									</li>
-								</c:if>
-								
-								<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
-									<li class= " ${pageMaker.cri.pageNum == num ? 'active' : '' } ">
-										<a href="${num}">${num}</a>
-									</li>
-								</c:forEach>
-								
-								<c:if test="${pageMaker.next}">
-									<li>
-										<a href="${pageMaker.endPage + 1}">Next</a>
-									</li>
-								</c:if>
-								
-								<!-- <li></li>
-								<li><strong>1</strong></li>
-								<li><a href="?page=2&amp;cno1=1012">2</a></li>
-								<li></li> -->
-							</ul>
-						</div> --%>
-						
-						<!--  end pagination -->
-						
-					</div>
-					
-					
-			
 
-<script type="text/javascript">
+
+						<script type="text/javascript">
 	//1. paging button event, 페이지 번호를 클릭하면 처리하는 부분 추가
 	
 /* 	$(document).ready(function() {
@@ -546,33 +462,33 @@ var google_alanytics_id = 'UA-166260789-1';
 		$('.sub_category').hide();
 	}
 </script>
-					<!-- mkt script '모비온' scr_bottom start-->
-					<!-- Enliple Insite breakAway Popup start -->
-					<script type="text/javascript">(function(m,b,r,i,s){m.mbris=m.mbris||function(){(m.mbris.q=m.mbris.q||[]).push(arguments)};i=b.createElement(r);i.async=!0;i.defer=!0;i.src="https://cdn.megadata.co.kr/dist/prod/enp_mbris.min.js";0<b.querySelectorAll("script[src*=enp_mbris]").length&&m.ENP_MBRIS_INVOKE?m.ENP_MBRIS_INVOKE():(s=b.getElementsByTagName(r)[0],s.parentNode.insertBefore(i,s))})(window,document,"script");mbris("202010303120052258_rexreskbio_3_01,202010303120052259_rexreskbio_3_02");
+						<!-- mkt script '모비온' scr_bottom start-->
+						<!-- Enliple Insite breakAway Popup start -->
+						<script type="text/javascript">(function(m,b,r,i,s){m.mbris=m.mbris||function(){(m.mbris.q=m.mbris.q||[]).push(arguments)};i=b.createElement(r);i.async=!0;i.defer=!0;i.src="https://cdn.megadata.co.kr/dist/prod/enp_mbris.min.js";0<b.querySelectorAll("script[src*=enp_mbris]").length&&m.ENP_MBRIS_INVOKE?m.ENP_MBRIS_INVOKE():(s=b.getElementsByTagName(r)[0],s.parentNode.insertBefore(i,s))})(window,document,"script");mbris("202010303120052258_rexreskbio_3_01,202010303120052259_rexreskbio_3_02");
 </script>
-					<!-- Enliple Insite breakAway Popup end -->
-					<!-- Enliple Tracker Start -->
-					<script type="text/javascript">
+						<!-- Enliple Insite breakAway Popup end -->
+						<!-- Enliple Tracker Start -->
+						<script type="text/javascript">
     (function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.async=!0;n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
     enp('create', 'common', 'rexreskbio', { device: 'W' });    
     enp('send', 'common', 'rexreskbio');
 </script>
-					<!-- Enliple Tracker End -->
-					<!--mkt script '모비온' scr_bottom end-->
+						<!-- Enliple Tracker End -->
+						<!--mkt script '모비온' scr_bottom end-->
 
 
+					</div>
 				</div>
-			</div>
-			<!-- //중앙 -->
-			<!-- 하단 -->
+				<!-- //중앙 -->
+				<!-- 하단 -->
 
-			<%@ include file="/WEB-INF/views/include/footer.jsp"%>
-			<!-- //하단 -->
-		</div>
-		<!-- placeholder 스크립트 (삭제하시면 ie 하위브라우저에서 구현되지 않습니다.) -->
-		<script
-			src="https://www.rexremall.com/_skin/skbioland_200731/img/../placeholder.js"></script>
-		<script type="text/javascript">
+				<%@ include file="/WEB-INF/views/include/footer.jsp"%>
+				<!-- //하단 -->
+			</div>
+			<!-- placeholder 스크립트 (삭제하시면 ie 하위브라우저에서 구현되지 않습니다.) -->
+			<script
+				src="https://www.rexremall.com/_skin/skbioland_200731/img/../placeholder.js"></script>
+			<script type="text/javascript">
 // 인기검색어 폰트사이즈 제어
 $(document).ready(function(){
 	$('.header').each(function(idx) {
@@ -583,28 +499,28 @@ $(document).ready(function(){
 });
 </script>
 
-	</div>
-	<script type="text/javascript" defer="defer">
+		</div>
+		<script type="text/javascript" defer="defer">
 $(document).ready(function() {
 	});
 </script>
-	<script type="text/javascript"
-		src="https://www.rexremall.com/wm_engine_SW/_engine/common/auto_scroll.js"
-		defer="defer"></script>
-	<script type="text/javascript"
-		src="https://www.rexremall.com/wm_engine_SW/_engine/common/jquery/jquery-ui-1.11.3.min.js"></script>
-	<script language="JavaScript">
+		<script type="text/javascript"
+			src="https://www.rexremall.com/wm_engine_SW/_engine/common/auto_scroll.js"
+			defer="defer"></script>
+		<script type="text/javascript"
+			src="https://www.rexremall.com/wm_engine_SW/_engine/common/jquery/jquery-ui-1.11.3.min.js"></script>
+		<script language="JavaScript">
 </script>
-	<style type="text/css">
+		<style type="text/css">
 .pop100 img {
 	width: 100%;
 }
 </style>
-	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-	<script type="text/javascript">Kakao.init('35f0e015717743bf7c71437e8faf25bd');</script>
-	<script type="text/javascript"
-		src="https://static.criteo.net/js/ld/ld.js" async="true"></script>
-	<script type="text/javascript">
+		<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+		<script type="text/javascript">Kakao.init('35f0e015717743bf7c71437e8faf25bd');</script>
+		<script type="text/javascript"
+			src="https://static.criteo.net/js/ld/ld.js" async="true"></script>
+		<script type="text/javascript">
 window.criteo_q = window.criteo_q || [];
 window.criteo_q.push(
 	{event:"setAccount",account:"71354"},
@@ -613,7 +529,7 @@ window.criteo_q.push(
 	{"event":"viewList","item":["B2EEB7362EF83DEFF5C7813A67E14F0A","076A0C97D09CF1A0EC3E19C7F2529F2B","FDE9264CF376FFFE2EE4DDF4A988880D"]});
 
 </script>
-	<script type="text/javascript">
+		<script type="text/javascript">
 	if(typeof wcs != 'undefined') {
 		if(typeof cpa == 'undefined') var cpa = {};
 		if(cpa['order']) {
@@ -622,21 +538,20 @@ window.criteo_q.push(
 		wcs_do(cpa);
 	}
 </script>
-	<span itemscope="" itemtype="http://schema.org/Organization">
-		<link itemprop="url" href="https://www.rexremall.com"> <a
-		itemprop="sameAs" href="https://www.facebook.com/officialrexre/"></a>
-		<a itemprop="sameAs" href="https://pf.kakao.com/_xjFMxbT"></a> <a
-		itemprop="sameAs" href="https://www.instagram.com/rexre.official"></a>
-	</span>
+		<span itemscope="" itemtype="http://schema.org/Organization">
+			<link itemprop="url" href="https://www.rexremall.com"> <a
+			itemprop="sameAs" href="https://www.facebook.com/officialrexre/"></a>
+			<a itemprop="sameAs" href="https://pf.kakao.com/_xjFMxbT"></a> <a
+			itemprop="sameAs" href="https://www.instagram.com/rexre.official"></a>
+		</span>
 
-	<div id="mbris_bounce_section"
-		style="height: 0px; z-index: 100000; visibility: hidden; overflow: hidden;">
-		<iframe scrolling="no" id="iframe_mbris_bounce_section"
-			style="width: 100%; height: 0px; border: none; opacity: 0;"></iframe>
-	</div>
-	<div id="criteo-tags-div" style="display: none;"></div>
-	<iframe height="0" width="0" title="Criteo DIS iframe"
-		style="display: none;"></iframe>
-
+		<div id="mbris_bounce_section"
+			style="height: 0px; z-index: 100000; visibility: hidden; overflow: hidden;">
+			<iframe scrolling="no" id="iframe_mbris_bounce_section"
+				style="width: 100%; height: 0px; border: none; opacity: 0;"></iframe>
+		</div>
+		<div id="criteo-tags-div" style="display: none;"></div>
+		<iframe height="0" width="0" title="Criteo DIS iframe"
+			style="display: none;"></iframe>
 </body>
 </html>

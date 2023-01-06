@@ -24,6 +24,7 @@ public class ProductServiceTests {
 	
 	@Test
 	public void testGetPagingList() throws Exception {
+		
 		List<productVO> list = service.getListWithPaging(new Criteria(1,9));
 	
 		for(int i = 0; i < list.size(); i++) {
@@ -50,5 +51,13 @@ public class ProductServiceTests {
 	public void testCategoryCount() {
 		System.out.println(service.getCategoryTotalCount("스킨케어"));
 		
+	}
+	
+	@Test
+	public void testNewBestList() {
+		List<productVO> list = service.getNewBestListWithPaging(new Criteria(1,9));
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
 	}
 }

@@ -15,5 +15,6 @@ public interface ProductService {
 	public int getCategoryTotalCount(String productCategory);
 	
 	//newBest
-	
+	public List<productVO> getNewBestListWithPaging(Criteria cri);
+	public int getNewBestTotalCount();
 }

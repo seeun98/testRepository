@@ -22,7 +22,7 @@ public class ProductController {
 	
 	//product 전체상품	
 	@GetMapping("/productList")
-	public String list(Criteria cri, @RequestParam("pageNum") Integer pageNum, @RequestParam("amount") Integer amount, Model model) throws Exception {
+	public String productList(Criteria cri, @RequestParam("pageNum") Integer pageNum, @RequestParam("amount") Integer amount, Model model) throws Exception {
 		
 		System.out.println("@@@@@@@@@@@@@@@CRI넘어온 pageNUM" + pageNum);
 		System.out.println("@@@@@@@@@@@@@@@CRI넘어온 Amount" + amount);
@@ -39,7 +39,7 @@ public class ProductController {
 	
 	//product Category
 	@GetMapping("/productCategory")
-	public String list(Criteria cri, @RequestParam("productCategory") String productCategory, @RequestParam("pageNum") Integer pageNum, @RequestParam("amount") Integer amount, Model model) throws Exception {
+	public String productCategory(Criteria cri, @RequestParam("productCategory") String productCategory, @RequestParam("pageNum") Integer pageNum, @RequestParam("amount") Integer amount, Model model) throws Exception {
 		
 		cri.setPageNum(pageNum);
 		cri.setAmount(amount);
@@ -50,5 +50,26 @@ public class ProductController {
 		model.addAttribute("pageMaker", pageDTO);
 		
 		return "product/productList";
+	}
+	
+	//product NewBest
+	@GetMapping("/productNewBest")
+	public String productNewBest(Criteria cri, @RequestParam("pageNum") Integer pageNum, @RequestParam("amount") Integer amount, Model model) {
+		cri.setPageNum(pageNum);
+		cri.setAmount(amount);
+		int total = productService.getNewBestTotalCount();
+		System.out.println("newbest 개수 ??? " + total);
+		model.addAttribute("productList", productService.getNewBestListWithPaging(cri));
+		PageDTO pageDTO = new PageDTO(cri, total);
+		model.addAttribute("pageMaker", pageDTO);
+		
+		return "product/productNewBest";
+	}
+	
+	
+	//product NEWBESTTEST
+	@GetMapping("/newBest")
+	public String newBestTest() {
+		return "product/productNewBest";
 	}
 }
