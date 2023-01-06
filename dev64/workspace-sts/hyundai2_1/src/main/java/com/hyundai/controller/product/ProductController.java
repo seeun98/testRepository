@@ -1,5 +1,7 @@
 package com.hyundai.controller.product;
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.hyundai.domain.Criteria;
 import com.hyundai.domain.PageDTO;
+import com.hyundai.domain.productDetailVO;
 import com.hyundai.service.ProductService;
 
 import lombok.AllArgsConstructor;
@@ -50,6 +53,7 @@ public class ProductController {
 		model.addAttribute("productList", productService.getCategoryListWithPaging(cri, productCategory));
 		PageDTO pageDTO = new PageDTO(cri, total);
 		model.addAttribute("pageMaker", pageDTO);
+		model.addAttribute("productCategory",productCategory);
 		
 		return "product/productList";
 	}
@@ -74,5 +78,21 @@ public class ProductController {
 	@GetMapping("/newBest")
 	public String newBestTest() {
 		return "product/productNewBest";
+	}
+	
+	//상품상세
+	//상품상세
+	@GetMapping("/productDetail")
+	public String list(@RequestParam("productId") Long productId, Model model) throws Exception {
+		
+		log.info("상품상세");
+		log.info(productId);
+		List<productDetailVO> list = productService.getProductDetail(productId);
+		for(int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+		model.addAttribute("productDetail", productService.getProductDetail(productId));
+
+		return "product/productDetail";
 	}
 }

@@ -10,6 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.hyundai.domain.Criteria;
 import com.hyundai.domain.PageDTO;
+import com.hyundai.domain.productDetailVO;
 import com.hyundai.domain.productVO;
 
 import lombok.NoArgsConstructor;
@@ -75,5 +76,24 @@ public class ProductMapperTests {
 		for(int i = 0; i < list.size(); i++) {
 			log.info(list.get(i));
 		}
+	}
+	
+	//product Detail 조회
+	@Test
+	public void testGetProductDetail() {
+		System.out.println("getProductDetail");
+		
+		List<productDetailVO> list = mapper.getProductDetail(1L);
+		for(int i = 0; i < list.size(); i++) {
+			log.info(list.get(i));
+		}
+	}
+	
+	//productDetailClick +1
+	@Test
+	public void testGetProductDetailCount() throws Exception {
+		log.info("getProductDetailCount");
+		int count = mapper.getProductDetailCount(1L);
+		log.info(count);
 	}
 }

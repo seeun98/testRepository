@@ -8,23 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="ROBOTS" content="INDEX,FOLLOW">
-<meta name="ROBOTS" content="ALL">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<title>리바이리 비건 스킨케어 상품 소개</title>
-<meta name="keywords"
-	content="리바이리, 바이오랜드, 현대백화점, 비건, 화장품, 스킨케어, 콤부차, 앰플, 토너, 미스트, 스킨, 크림, 폼, 클렌저, 마스크, 현대, 뷰티, 비건크림, 비건앰플, 비건토너, 비건케어">
-<meta name="description"
-	content="현대백화점그룹의 천연원료 전문기업인 현대바이오랜드에서 만든 비건 뷰티 브랜드. 
-비건 인증 콤부차토너, 수분앰플, 장벽크림, 약산성폼, 진정마스크 출시">
-<meta property="og:site_name" content="클린 &amp; 비건 뷰티 브랜드 리바이리 ">
-<meta property="og:url"
-	content="https://www.rexremall.com/shop/big_section.php?cno1=1012">
-<meta property="og:title" content="리바이리(ReXRe), 클린 &amp; 비건 뷰티 브랜드">
-<meta property="og:description"
-	content="현대백화점그룹의 천연원료 전문기업인 현대바이오랜드에서 만든 비건 뷰티 브랜드. 
-비건 인증 콤부차토너, 수분앰플, 장벽크림, 약산성폼, 진정마스크 출시">
-<meta property="og:image" content="">
+
 <link rel="shortcut icon" type="image/x-icon"
 	href="https://www.rexremall.com/favicon.ico">
 <link rel="stylesheet" type="text/css"
@@ -151,57 +135,27 @@ fbq('track', 'PageView');
 	환영합니다”="">
 <meta property="”og:url”content=https://rexremall.com">
 <link rel="canonical" href="https://rexremall.com/">
-<meta name="naver-site-verification"
-	content="c1f6aa068fade511a5995d60dd3d32f8edf57215">
-<meta name="naver-site-verification"
-	content="794428c5cbe22d677541986cc1d782ad2cd721c5">
-<meta name="google-site-verification"
-	content="cidn9DzlKYVsiEyYfnunTgMYDth2yGwqyKtrkV2ZZ6A">
-<meta name="google-site-verification"
-	content="AyAqvcuga1E1Pbd3qJHE8TFg0Gxt0t6mRyz_BJc6VR4">
-<meta name="naver-site-verification"
-	content="d75207d3de590facc9d0de5a39260f48e16bbb9e">
-<meta name="facebook-domain-verification"
-	content="6xutrdio1qvgknsc8axf1z4gh8dx3f">
-<meta name="facebook-domain-verification"
-	content="mm7dc8pm3ja2f0lpa37zzwmyhc4jfd">
-<meta property="”og:image”"
-	content="“https://skbiolandmall.wisacdn.com/_data/banner/seo/aca9ec01c76b8eca3c6456d4c046bd53.JPG"“="">
+
 <script type="text/javascript" charset="UTF-8"
 	src="//t1.daumcdn.net/adfit/static/kp.js"></script>
 <script type="text/javascript">
       kakaoPixel('4206431215218999756').pageView();
 </script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-				ga('create', 'UA-166260789-1', 'auto');
-				ga('send', 'pageview');
-			
-var use_google_enhenced_ecommerce = true;
-var google_alanytics_id = 'UA-166260789-1';
-</script>
-<script
-	src="https://cdn.megadata.co.kr/js/socialLink/social_sns_config_min.js"
-	type="text/javascript" defer="" async=""></script>
-<meta http-equiv="origin-trial"
-	content="A9+ldib+sKhGj2FcIjq5GnvBZFuIiXID0+NkE6k7cEk71MhaHFGqo3wUlUFmZ6d9w0KPwx9UxGiCTYWtRnTGDQkAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5uZXQ6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY4MDY1Mjc5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
-<meta http-equiv="origin-trial"
-	content="AzLNuh8GFzfIOcwvhEg7Ymr7YCzlYVTKeD7i2iETABbRf+sL2FAx+r+HlTtxSi1zgUFxBlJVoxgLjuhqiwTjAw4AAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY4MDY1Mjc5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+
 </head>
 
 
 
 
-<!-- mkt script '카카오모먼트' scr_header start-->
-
-
-<!--mkt script '카카오모먼트' scr_header end-->
 
 <body>
+
+
+
+
+	<input type='hidden' name='category' class='category'
+		value='${productCategory}'>
 	<iframe name="hidden1672384053" src="about:blank" width="0" height="0"
 		scrolling="no" frameborder="0" style="display: none"></iframe>
 
@@ -370,6 +324,8 @@ var google_alanytics_id = 'UA-166260789-1';
 
 											</div>
 										</div></li>
+
+
 								</c:forEach>
 							</ul>
 							<!-- 상품 jsplist -->
@@ -379,27 +335,32 @@ var google_alanytics_id = 'UA-166260789-1';
 
 							<ul class="paging">
 								<c:if test="${pageMaker.prev}">
-									<li class="paginate_button previous">
-										<a href="${pageMaker.firstPage}"> << </a>
-										<a href="${pageMaker.startPage - 1}">이전</a>	
-									</li>
-				
+									<li class="paginate_button previous"><a
+										href="${pageMaker.firstPage}"> << </a> <a
+										href="${pageMaker.startPage - 1}">이전</a></li>
+
 								</c:if>
-								
+
 								<!-- number -->
 								<c:forEach var="num" begin="${pageMaker.startPage}"
 									end="${pageMaker.endPage }">
-									
+
 									<li class="paginate_button ${pageMaker.cri.pageNum == num ? "action" : "" }">
-										<a style="font-weight:bold; margin: 3px;" class="pageNutton"
-										href="/product/productList?pageNum=${num}&amount=9">${num}</a>
+										<a style="font-weight: bold; margin: 3px;" class="pageNutton"
+										href="/product/productList?pageNum=${num}&amount=9"
+										id="buttonurl${num}" data-num="${num}"}>${num}</a>
 									</li>
+
+
+									<input type='hidden' name='num' id='num'
+										value='${pageMaker.startPage}'>
+
+
 								</c:forEach>
-								
+
 								<c:if test="${pageMaker.next}">
-									<li class="pageinate_button next">
-										<a href="${pageMaker.endPage + 1}"></a>
-									</li>
+									<li class="pageinate_button next"><a
+										href="${pageMaker.endPage + 1}"></a></li>
 								</c:if>
 								<!-- <li></li>
 								<li><strong>1</strong></li>
@@ -460,14 +421,72 @@ var google_alanytics_id = 'UA-166260789-1';
 </script>
 						<!-- mkt script '모비온' scr_bottom start-->
 						<!-- Enliple Insite breakAway Popup start -->
-						<script type="text/javascript">(function(m,b,r,i,s){m.mbris=m.mbris||function(){(m.mbris.q=m.mbris.q||[]).push(arguments)};i=b.createElement(r);i.async=!0;i.defer=!0;i.src="https://cdn.megadata.co.kr/dist/prod/enp_mbris.min.js";0<b.querySelectorAll("script[src*=enp_mbris]").length&&m.ENP_MBRIS_INVOKE?m.ENP_MBRIS_INVOKE():(s=b.getElementsByTagName(r)[0],s.parentNode.insertBefore(i,s))})(window,document,"script");mbris("202010303120052258_rexreskbio_3_01,202010303120052259_rexreskbio_3_02");
+						<script type="text/javascript">
+						
+						
+						
+						
+						
 </script>
+
+
+
+
+
 						<!-- Enliple Insite breakAway Popup end -->
 						<!-- Enliple Tracker Start -->
 						<script type="text/javascript">
+						
+						
+				
+						
     (function(a,g,e,n,t){a.enp=a.enp||function(){(a.enp.q=a.enp.q||[]).push(arguments)};n=g.createElement(e);n.async=!0;n.defer=!0;n.src="https://cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js";t=g.getElementsByTagName(e)[0];t.parentNode.insertBefore(n,t)})(window,document,"script");
     enp('create', 'common', 'rexreskbio', { device: 'W' });    
     enp('send', 'common', 'rexreskbio');
+</script>
+
+						<script type="text/javascript">
+
+						
+						
+
+
+						
+						
+						
+$(document).ready(function(){
+	
+	
+	
+	var category = $('.category').val();
+	
+	if(category!=""){
+	
+		
+		$("[id^='buttonurl']" ).each( function() {
+	          var num = $( this ).attr('data-num');
+	          $(this).attr("href", "productCategory?productCategory="+category+"&pageNum="+num+"&amount=9")
+	          
+	         
+	        } );
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+
+
+});
+
+
 </script>
 						<!-- Enliple Tracker End -->
 						<!--mkt script '모비온' scr_bottom end-->

@@ -9,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.hyundai.domain.Criteria;
+import com.hyundai.domain.productDetailVO;
 import com.hyundai.domain.productVO;
 
 import lombok.Setter;
@@ -60,4 +61,16 @@ public class ProductServiceTests {
 			System.out.println(list.get(i));
 		}
 	}
+	
+	//상세페이지 + 조회수 test
+	
+	@Test
+	public void testGetProductDetail() throws Exception {
+		List<productDetailVO> list = service.getProductDetail(1L);
+		for(int i = 0; i < list.size(); i++) {
+			log.info(list.get(i));
+		}
+	}
+	
+	
 }
