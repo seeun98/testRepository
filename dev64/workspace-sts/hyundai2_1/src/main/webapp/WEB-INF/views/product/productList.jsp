@@ -272,7 +272,7 @@ var google_alanytics_id = 'UA-166260789-1';
 							<!-- 상품정렬 -->
 							<div class="total_sort">
 								<p class="total">
-									<strong>12</strong>개의 상품
+									<strong>${total}</strong>개의 상품
 								</p>
 								<div class="sort">
 									<select onchange="if(this.value){location.href=this.value}"><option
@@ -377,45 +377,41 @@ var google_alanytics_id = 'UA-166260789-1';
 							<!-- Pagination -->
 
 
-							<div class="">
-								<!--  이전 버튼이 true이면 -->
+							<ul class="paging">
 								<c:if test="${pageMaker.prev}">
-									<span class="paginate_button previous"> <a
-										href="${pageMaker.firstPage}"> << </a> <a
-										href="${pageMaker.startPage -1}">이전</a>
-									</span>
+									<li class="paginate_button previous">
+										<a href="${pageMaker.firstPage}"> << </a>
+										<a href="${pageMaker.startPage - 1}">이전</a>	
+									</li>
+				
 								</c:if>
-
-
+								
 								<!-- number -->
 								<c:forEach var="num" begin="${pageMaker.startPage}"
 									end="${pageMaker.endPage }">
-
-
-									<span class="paginate_button ${pageMaker.cri.pageNum == num ? "active" : ""} ">
-
-										<a style="font-weight: bold; margin: 3px;" class="pageBtn"
+									
+									<li class="paginate_button ${pageMaker.cri.pageNum == num ? "action" : "" }">
+										<a style="font-weight:bold; margin: 3px;" class="pageNutton"
 										href="/product/productList?pageNum=${num}&amount=9">${num}</a>
-
-
-									</span>
+									</li>
 								</c:forEach>
-
-								<!-- 이전 버튼 -->
+								
 								<c:if test="${pageMaker.next}">
-									<span class="paginate_button next"> <a
-										href="${pageMaker.endPage + 1}"></a>
-									</span>
+									<li class="pageinate_button next">
+										<a href="${pageMaker.endPage + 1}"></a>
+									</li>
 								</c:if>
-
-							</div>
+								<!-- <li></li>
+								<li><strong>1</strong></li>
+								<li><a href="?page=2&amp;cno1=1009">2</a></li>
+								<li></li> -->
+							</ul>
 
 							<!-- 311p -->
 							<form id='actionFrom' action="/product/productList" method="get">
 								<input type='hidden' name='pageNum'
 									value='${pageNum.cri.pageNum}'> <input type='hidden'
 									name='amount' value='${pageNum.cri.amount }'>
-
 							</form>
 
 							<!-- End Pagination -->

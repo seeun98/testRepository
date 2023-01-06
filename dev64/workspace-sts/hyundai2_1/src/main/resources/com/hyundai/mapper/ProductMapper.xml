@@ -45,7 +45,7 @@
 					I.IMAGE_ID, I.IMAGE_CATEGORY, I.IMAGE_PATH
 				FROM PRODUCTS P, PRODUCTIMAGES I
 				WHERE P.PRODUCT_ID = I.PRODUCTS_PRODUCT_ID
-					AND ROWNUM < #{cri.pageNum} * #{cri.amount}
+					AND ROWNUM <= #{cri.pageNum} * #{cri.amount}
 					AND P.PRODUCT_CATEGORY = #{productCategory}
 					AND I.IMAGE_CATEGORY = '상품'
 				)
@@ -82,7 +82,7 @@
 					I.IMAGE_ID, I.IMAGE_CATEGORY, I.IMAGE_PATH
 				FROM PRODUCTS P, PRODUCTIMAGES I
 				WHERE P.PRODUCT_ID = I.PRODUCTS_PRODUCT_ID
-						AND ROWNUM < #{pageNum} * #{amount}
+						AND ROWNUM <= #{pageNum} * #{amount}
 						AND P.PRODUCT_CLICK >= 5 AND P.PRODUCT_REGDATE >= '2022-12-30'
 						AND I.IMAGE_CATEGORY = '상품'
 				)

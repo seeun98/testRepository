@@ -9,6 +9,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.hyundai.domain.Criteria;
+import com.hyundai.domain.PageDTO;
 import com.hyundai.domain.productVO;
 
 import lombok.NoArgsConstructor;
@@ -28,7 +29,10 @@ public class ProductMapperTests {
 	@Test 
 	public void testGetListWithPaging() {
 		log.info("getListWith paging");
-		List<productVO> list = mapper.getListWithPaging(new Criteria(1, 9));
+		int count = mapper.getTotalCount();
+		Criteria cri = new Criteria(2,9);
+		PageDTO pageDTO = new PageDTO(cri, count);
+		List<productVO> list = mapper.getListWithPaging(cri);
 		
 		for(int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));

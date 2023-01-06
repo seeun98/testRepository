@@ -30,6 +30,7 @@ public class ProductController {
 		cri.setAmount(amount);
 		int total = productService.getTotalCount();
 		System.out.print(total);
+		model.addAttribute("total", total);
 		model.addAttribute("productList", productService.getListWithPaging(cri));
 		PageDTO pageDTO = new PageDTO(cri, total);
 		System.out.println(pageDTO.getEndPage());
@@ -44,7 +45,8 @@ public class ProductController {
 		cri.setPageNum(pageNum);
 		cri.setAmount(amount);
 		int total = productService.getCategoryTotalCount(productCategory);
-		System.out.println(total);
+		System.out.println("Category Total : " + total);
+		model.addAttribute(total);
 		model.addAttribute("productList", productService.getCategoryListWithPaging(cri, productCategory));
 		PageDTO pageDTO = new PageDTO(cri, total);
 		model.addAttribute("pageMaker", pageDTO);
@@ -58,6 +60,7 @@ public class ProductController {
 		cri.setPageNum(pageNum);
 		cri.setAmount(amount);
 		int total = productService.getNewBestTotalCount();
+		model.addAttribute("total", total);
 		System.out.println("newbest 개수 ??? " + total);
 		model.addAttribute("productList", productService.getNewBestListWithPaging(cri));
 		PageDTO pageDTO = new PageDTO(cri, total);
